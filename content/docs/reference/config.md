@@ -56,7 +56,8 @@ export default defineConfig({
   clientId: '<Your Client ID>', // generated on app.tina.io
   build: {
     publicFolder: 'public', // The public asset folder for your framework
-    outputFolder: 'admin'  // within the public folder
+    outputFolder: 'admin',  // within the public folder
+    host: '0.0.0.0' // optional : allow Tina to listen on any address
   }
   // See https://tina.io/docs/reference/schema/ for more information
   schema: {
